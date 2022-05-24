@@ -6,6 +6,7 @@ plugins {
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
 	kotlin("plugin.jpa") version "1.6.21"
+	kotlin("plugin.serialization") version "1.4.10"
 }
 
 group = "com.inventa"
@@ -28,6 +29,12 @@ dependencies {
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.security:spring-security-test")
+	testImplementation("io.rest-assured:rest-assured:5.0.1")
+	testImplementation("io.rest-assured:json-path:5.0.1")
+	testImplementation("io.rest-assured:xml-path:5.0.1")
+	testImplementation("io.rest-assured:json-schema-validator:5.0.1")
+	testImplementation("io.rest-assured:kotlin-extensions:5.0.1")
+	implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.3.1")
 }
 
 tasks.withType<KotlinCompile> {
