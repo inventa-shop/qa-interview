@@ -6,3 +6,6 @@
 
 ### How to run end to end tests with cypres
 1. Run in the terminal: `npx cypress open`
+
+### You can also access the site in:
+https://qa-interview-inventa.netlify.app/
