@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.inventa.qaapitesting.ProductControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-09T04:21:44" hostname="Inventas-MacBook-Pro.local" time="1.674">
+  <properties/>
+  <testcase name="test find by id()" classname="com.inventa.qaapitesting.ProductControllerTest" time="1.19"/>
+  <testcase name="test find all()" classname="com.inventa.qaapitesting.ProductControllerTest" time="0.475"/>
+  <system-out><![CDATA[01:21:29.655 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+01:21:29.716 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+01:21:30.091 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.inventa.qaapitesting.ProductControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+01:21:30.138 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.inventa.qaapitesting.ProductControllerTest], using SpringBootContextLoader
+01:21:30.167 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.inventa.qaapitesting.ProductControllerTest]: class path resource [com/inventa/qaapitesting/ProductControllerTest-context.xml] does not exist
+01:21:30.169 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.inventa.qaapitesting.ProductControllerTest]: class path resource [com/inventa/qaapitesting/ProductControllerTestContext.groovy] does not exist
+01:21:30.170 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.inventa.qaapitesting.ProductControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+01:21:30.179 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.inventa.qaapitesting.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:21:30.540 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.inventa.qaapitesting.ProductControllerTest]
+01:21:31.023 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/caiquecoelho/Documents/qa-interview-api-test/build/classes/kotlin/main/com/inventa/qaapitesting/QaApiTestingApplication.class]
+01:21:31.025 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.inventa.qaapitesting.QaApiTestingApplication for test class com.inventa.qaapitesting.ProductControllerTest
+01:21:31.527 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.inventa.qaapitesting.ProductControllerTest]: using defaults.
+01:21:31.531 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+01:21:31.587 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@32232e55, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5217f3d0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@37ebc9d8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@293bb8a5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2416a51, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6fa590ba, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6e9319f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@72e34f77, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@7bf9b098, org.springframework.test.context.event.EventPublishingTestExecutionListener@389adf1d, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@77307458, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1fc0053e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@290b1b2e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@47874b25, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33617539, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2c177f9e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5db4c359]
+01:21:31.594 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1922e6d testClass = ProductControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@76a82f33 testClass = ProductControllerTest, locations = '{}', classes = '{class com.inventa.qaapitesting.QaApiTestingApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@52c3cb31, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1f010bf0, [ImportsContextCustomizer@6bab2585 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4f25b795, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@525575, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@22d7b4f8, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@6b8ca3c8], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2022-06-09 01:21:37.437  INFO 7384 --- [    Test worker] c.i.qaapitesting.ProductControllerTest   : Starting ProductControllerTest using Java 17.0.3 on Inventas-MacBook-Pro.local with PID 7384 (started by caiquecoelho in /Users/caiquecoelho/Documents/qa-interview-api-test)
+2022-06-09 01:21:37.441  INFO 7384 --- [    Test worker] c.i.qaapitesting.ProductControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 01:21:39.360  INFO 7384 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-09 01:21:39.461  INFO 7384 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+2022-06-09 01:21:40.411  INFO 7384 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-09 01:21:40.830  INFO 7384 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-09 01:21:40.971  INFO 7384 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-09 01:21:41.049  INFO 7384 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-09 01:21:41.412  INFO 7384 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-09 01:21:41.621  INFO 7384 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-09 01:21:42.227  INFO 7384 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-09 01:21:42.252  INFO 7384 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-09 01:21:43.334  WARN 7384 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-09 01:21:44.213  WARN 7384 --- [    Test worker] o.s.b.a.m.MustacheAutoConfiguration      : Cannot find template location: classpath:/templates/ (please add some templates, check your Mustache configuration, or set spring.mustache.check-template-location=false)
+2022-06-09 01:21:44.543  INFO 7384 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-06-09 01:21:44.543  INFO 7384 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-06-09 01:21:44.545  INFO 7384 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2022-06-09 01:21:44.579  INFO 7384 --- [    Test worker] c.i.qaapitesting.ProductControllerTest   : Started ProductControllerTest in 12.88 seconds (JVM running for 17.974)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /products/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.inventa.qaapitesting.ProductController
+           Method = com.inventa.qaapitesting.ProductController#getById(long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":1,"name":"Meu Produto","sku":123,"description":"Descrição do Produto"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /products
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.inventa.qaapitesting.ProductController
+           Method = com.inventa.qaapitesting.ProductController#getAll()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"name":"Meu Produto","sku":123,"description":"Descrição do Produto"},{"id":2,"name":"Meu Produto","sku":123,"description":"Descrição do Produto"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
