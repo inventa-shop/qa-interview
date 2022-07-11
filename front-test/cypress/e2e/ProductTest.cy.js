@@ -4,29 +4,33 @@ import { HomePage } from "../support/pages/HomePage/HomePage";
 import { SearchPage } from "../support/pages/SearchPage/SearchPage";
 
 describe("Search for test products", () => {
+  beforeEach(() => {
+    cy.visit("https://inventa.shop/");
+  });
 
-  it("Will search for shampoo transparente product and we expect to get just one product with this name", () => {
-    cy.visit("https://inventa.shop/promocoes-1");
-
-    cy.get("#modal-closer").first().click();
-    click(get(.search-bar-button));
-    cy.get("[placeholder='digitar produto']")
-      .first()
-      .write("Shampoo transparente{enter}");
-    cy.contains("Ver preço");
-    const size = cy.contains("Shampoo transparente").expect("have.size", 2);
-  
-    cy.log(size)
-    visit("https://inventa.shop/collections/novidades")
-    cy.wait(5000)
-    cy.get(".spf-product-card__title").foreach(product => {
-      expect(products).to.not.have.text('undefined')
-    })
+  afterEach(() => {
     cy.get(".price").should('exist')
   });
 
+  it("Will search for shampoo transparente product and we expect to get just one product with this name", () => {
+  
+    cy.get("#modal-closer").first().click();
+    cy.get('.search-bar-button').click();
+    cy.get("[placeholder='digitar produto']")
+      .first()
+      .type("Shampoo transparente{enter}");
+    cy.contains("Ver preço");
+    const size = cy.contains("Shampoo transparente").should("have.length", 1);
+  
+    cy.log(size)
+    cy.visit("https://inventa.shop/collections/novidades")
+    cy.wait(5000)
+    // cy.get(".spf-product-card__title").then(product => {
+    //   expect(product).to.not.have.text('undefined')
+    // })
+  });
+
   it("", () => {
-    cy.vist("https://inventa.shop//promocoes-1");
     page = new HomePage();
     page.getSearchBarButton().click();
     page.getSearchBarInput().type("Shampoo transparente{enter}");
@@ -35,6 +39,7 @@ describe("Search for test products", () => {
     page = new SearchPage();
     page.getSeePriceLabel()
     page.verifyIfProductDoesNotExists("Shampoo claro e transparente");
-    cy.get(".price").should('exist')
   });
+  
+
 });
