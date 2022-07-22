@@ -9,6 +9,7 @@ describe("Search for test products", () => {
     cy.visit("https://inventa.shop/promocoes-1");
 
     cy.get("#modal-closer").first().click();
+    
     click(get(.search-bar-button));
     cy.get("[placeholder='digitar produto']")
       .first()
