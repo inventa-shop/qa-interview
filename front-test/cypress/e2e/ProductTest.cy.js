@@ -6,7 +6,7 @@ import { SearchPage } from "../support/pages/SearchPage/SearchPage";
 describe("Search for test products", () => {
 
   it("Will search for shampoo transparente product and we expect to get just one product with this name", () => {
-    cy.visit("https://inventa.shop/promocoes-1");
+    cy.visit("https://inventa.shop");
 
     cy.get("#modal-closer").first().click();
     click(get(.search-bar-button));
@@ -26,7 +26,7 @@ describe("Search for test products", () => {
   });
 
   it("", () => {
-    cy.vist("https://inventa.shop//promocoes-1");
+    cy.vist("https://inventa.shop");
     page = new HomePage();
     page.getSearchBarButton().click();
     page.getSearchBarInput().type("Shampoo transparente{enter}");
